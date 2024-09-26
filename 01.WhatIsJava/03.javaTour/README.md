@@ -36,6 +36,57 @@
 > 이 때문에, C/C++보다는 자바가 속도가 느리다... (자바 또한, JIT를 도입해 하드웨어를 직접 제어하는 경우만 아니라면 속도를 거의 따라잡았다네요)
 
 
+### 간단한 프로그램 실행해보기
+윈도우 기준이다.<br>
+1. [윈도우 + R] 누르고, `cmd`입력 후 엔터를 눌러 도스창 띄우기
+2. `copy con HelloWorld.java`명령어 입력하고,
+    ```bash
+    class HelloWorld {
+    }
+    ^Z // console에서 입력을 받기 때문에, ctrl + z를 누르고 엔터를 누르면 입력을 그만 받는다.
+    ```
+3. `javac HelloWorld.java`명령어를 이용해 해당 자바소스를 컴파일 (HelloWorld.class파일이 생긴다.)
+4. `java HelloWorld`로 `.class`파일 실행 (`java`의 인자로 확장자인 `.class`는 빼고, 파일명만 넣어줘야 한다.)<br>
+    그러면, `main` 메소드가 없기 때문에 일단 에러가 생겼지만 자바소스를 실행해 본 것에 의의를 두자.<br>
+    ```bash
+    Error: Main method not found in class HelloWorld, please define the main method as:
+      public static void main(String[] args)
+    or a JavaFX application class must extend javafx.application.Application
+    ```
+
+### 인텔리제이 실행하기
+1. [IntelliJ Downloads](https://www.jetbrains.com/ko-kr/idea/download/?section=windows) 접속
+2. 운영체제에 맞는 거 설치 (아래로 내려가면 무료판이 있다.)
+3. IntelliJ를 실행하고, [New Project]로 프로젝트를 만들면 된다.
+4. `src`폴더에서 우클릭 [New -> Java Class] 클릭. `HelloWorld`로 파일명 입력.
+5. 그러면, `HelloWorld.java`파일이 생기고 아래와 같은 내용이 있다.
+   ```java
+   public class HelloWorld {
+   }
+   ```
+
+> [!NOTE]
+> `src`폴더에 `.java`파일들이 저장된다.<br>
+> `.iml`은 현재 프로젝트의 환경값을 저장하는 인텔리제이의 설정 파일이다.<br>
+> 클래스명과 파일명이 같은 그 class 앞에 `public`을 붙여줘야 하는 관례가 있다.<br>
+
+### main 메서드 이해하기
+어떤 프로그램이든 시작과 끝이 있는데 이걸 관리하는 것이 `main` 메서드이다.<br>
+```java
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+```
+[Run -> Run -> HelloWorld]로 프로그램 실행!
+```bash
+Hello World
+```
+
+> [!NOTE]
+> 클래스 내의 함수를 메서드라고 부르는데, 자바는 모든 것이 클래스 기반이므로 자바에서 사용하는 함수는 모두 메서드이다.<br>
+> IntelliJ에서 작성한 `.java`파일을 Run명령으로 실행하면 `.class`파일을 만드는 컴파일 과정(javac.exe)과 실행 과정(java.exe)이 자동으로 진행된다.<br>
 
 
 ### Reference

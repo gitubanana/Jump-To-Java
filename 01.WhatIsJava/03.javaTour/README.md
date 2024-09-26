@@ -1,6 +1,6 @@
 ### JDK 설치하기
 자바 프로그램을 만들기 위해서는 `JDK(Java development kit)`를 꼭 설치해야 한다.<br>
-`JDK`는 자바 코드 작성 도구, 컴파일러 등으로 이루어져 있다.<br>
+`JDK`는 자바 코드 작성 도구, 컴파일러, JVM 등으로 이루어져 있다.<br>
 
 현재 (2024.09.25) 기준으로 설치했기 때문에, 당신이 보고 있을 때는 다른 방법일 수 있습니다..!
 1. [Java Downloads](https://www.oracle.com/kr/java/technologies/downloads/#jdk23-windows) 접속

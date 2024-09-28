@@ -1,5 +1,5 @@
 ### static 변수
-`static 변수`를 통해 값을 공요할 수 있다.<br>
+`static 변수`를 통해 값을 공유할 수 있다.<br>
 (`static 변수`를 설정하면, 같은 메모리 주소만 보기 때문에, 공유할 수 있다.)<br>
 ```java
 class Counter {

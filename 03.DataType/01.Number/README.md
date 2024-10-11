@@ -1,6 +1,7 @@
 ### 정수
-`int`, `long`, `short`, `byte`가 있다. (물론, `unsigned`도 있다.)<br>
-(`C/C++`과 비슷하다)
+`int`, `long`, `short`, `byte`가 있다.
+(`unsigned`도 있는 줄 알았는데 아니었다...)<br>
+(`C/C++`과 비슷하다)<br>
 ```go
 int age = 2147483647;
 long countOfStar = 8764827384923849L;
@@ -41,3 +42,4 @@ int hex = 0xA;       // 십진수로 표현하면, 16^0*10 = 10
 ### Reference
 [03-01 숫자](https://wikidocs.net/204)<br>
 [what does ">>>" mean in java?](https://stackoverflow.com/questions/19058859/what-does-mean-in-java)<br>
+[Why doesn't Java support unsigned ints?](https://stackoverflow.com/questions/430346/why-doesnt-java-support-unsigned-ints)<br>
